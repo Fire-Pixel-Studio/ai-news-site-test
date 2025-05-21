@@ -1,0 +1,112 @@
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(120deg, #283e51, #485563);
+    margin: 0;
+    padding: 0;
+    color: #f5f5f5;
+    min-height: 100vh;
+}
+
+header {
+    text-align: center;
+    background: rgba(40, 62, 81, 0.9);
+    padding: 2rem 1rem 1rem 1rem;
+    box-shadow: 0 4px 18px rgba(0,0,0,0.2);
+}
+
+header .glow {
+    color: #00ffe7;
+    text-shadow: 0 0 10px #00ffe7, 0 0 20px #00ffe7;
+    font-size: 2.5rem;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+}
+
+main {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 1rem;
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.search input {
+    width: 300px;
+    padding: 0.7rem;
+    border-radius: 25px 0 0 25px;
+    border: none;
+    font-size: 1rem;
+    outline: none;
+}
+
+.search button {
+    padding: 0.7rem 1.5rem;
+    border: none;
+    border-radius: 0 25px 25px 0;
+    background: #00ffe7;
+    color: #283e51;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.search button:hover {
+    background: #00bfae;
+}
+
+.news-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.news-card {
+    background: rgba(34, 49, 63, 0.95);
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 6px 24px rgba(0,0,0,0.15);
+    transition: transform 0.2s;
+}
+
+.news-card:hover {
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 12px 36px rgba(0,255,231,0.1);
+}
+
+.news-image {
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+    background: #222;
+}
+
+.news-content {
+    padding: 1.2rem;
+}
+
+.news-title {
+    font-size: 1.2rem;
+    color: #00ffe7;
+    margin: 0 0 0.7rem 0;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+}
+
+.news-summary {
+    color: #e0f7fa;
+    font-size: 1rem;
+    margin-bottom: 0.7rem;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: rgba(40, 62, 81, 0.9);
+    box-shadow: 0 -2px 12px rgba(0,0,0,0.12);
+    margin-top: 3rem;
+}
